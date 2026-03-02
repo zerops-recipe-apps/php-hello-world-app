@@ -1,0 +1,14 @@
+{
+    "name": "zerops/php-hello-world",
+    "description": "PHP Hello World recipe for Zerops",
+    "type": "project",
+    "require": {
+        "php": ">=8.4",
+        "ext-pdo": "*",
+        "ext-pdo_pgsql": "*"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
