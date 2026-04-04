@@ -63,7 +63,7 @@ zerops:
       envVariables:
         # DB_NAME matches the PostgreSQL service hostname — a static value,
         # not a generated variable (Zerops names the database after hostname).
-        DB_NAME: db
+        DB_NAME: ${db_dbName}
         # The remaining vars reference generated credentials from the 'db'
         # service. Pattern: ${hostname_key} → e.g., ${db_hostname}, ${db_port}.
         DB_HOST: ${db_hostname}
