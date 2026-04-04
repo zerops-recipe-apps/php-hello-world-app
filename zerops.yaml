@@ -71,7 +71,7 @@ zerops:
         # Migration runs once per deploy — DB is ready when SSH session starts.
         - zsc execOnce ${appVersionId} --retryUntilSuccessful -- php migrate.php
       envVariables:
-        DB_NAME: db
+        DB_NAME: ${db_dbName}
         DB_HOST: ${db_hostname}
         DB_PORT: ${db_port}
         DB_USER: ${db_user}
