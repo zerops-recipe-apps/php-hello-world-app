@@ -1,14 +1,30 @@
 {
     "name": "zerops/php-hello-world",
-    "description": "PHP Hello World recipe for Zerops",
+    "description": "Minimal PHP + PDO PostgreSQL hello-world recipe for Zerops",
     "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zerops"
+        }
+    ],
+    "keywords": [
+        "php",
+        "zerops",
+        "postgresql",
+        "hello-world"
+    ],
     "require": {
-        "php": ">=8.4",
+        "php": ">=8.5",
         "ext-pdo": "*",
         "ext-pdo_pgsql": "*"
     },
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true
+    },
+    "support": {
+        "issues": "https://github.com/zerops-recipe-apps/php-hello-world-app/issues",
+        "source": "https://github.com/zerops-recipe-apps/php-hello-world-app"
     }
 }
